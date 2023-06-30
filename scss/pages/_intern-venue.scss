@@ -30,21 +30,6 @@
   }
 }
 
-.internVenue-body .banner-internVenue::after,
-.internprovider-body .banner-internVenue::after {
-  background-image: url("../img/ab-curve_black.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: -1px;
-  content: "";
-  height: 254px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  pointer-events: none;
-}
-
 .internVenue-body .banner-internVenue h1,
 .internprovider-body .banner-internVenue h1 {
   font-family: "MuseoSans-700";
@@ -638,34 +623,6 @@
     border-radius: 0;
   }
 }
-.internVenue-body .gallery.others::after,
-.internprovider-body .gallery.others::after {
-  background-image: url("../img/ab-curve_black.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: -1px;
-  content: "";
-  height: 254px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.internVenue-body .gallery.others::before,
-.internprovider-body .gallery.others::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
-}
 
 .internVenue-body .gallery.others img,
 .internprovider-body .gallery.others img {
@@ -877,8 +834,8 @@
     opacity: 0.5;
   }
 }
-.internVenue-body .grid-venues,
-.internprovider-body .grid-venues {
+.internVenue-body .grid-hotels,
+.internprovider-body .grid-hotels {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
@@ -888,8 +845,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .internVenue-body .grid-venues,
-  .internprovider-body .grid-venues {
+  .internVenue-body .grid-hotels,
+  .internprovider-body .grid-hotels {
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr;
@@ -899,8 +856,8 @@
     padding: 0 20px;
   }
 }
-.internVenue-body .grid-venues li a,
-.internprovider-body .grid-venues li a {
+.internVenue-body .grid-hotels li a,
+.internprovider-body .grid-hotels li a {
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   border-radius: 15px;
   overflow: hidden;
@@ -911,43 +868,43 @@
   height: 100%;
 }
 
-.internVenue-body .grid-venues li a:hover,
-.internprovider-body .grid-venues li a:hover {
+.internVenue-body .grid-hotels li a:hover,
+.internprovider-body .grid-hotels li a:hover {
   transform: scale(1.03);
   background: #4d4d4b;
   background: linear-gradient(223deg, #4d4d4b 60%, #1a1a1a 100%);
 }
 
-.internVenue-body .grid-venues li a h4,
-.internprovider-body .grid-venues li a h4 {
+.internVenue-body .grid-hotels li a h4,
+.internprovider-body .grid-hotels li a h4 {
   font-family: "MuseoSans-700";
   font-size: 2.2rem;
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a h5,
-.internprovider-body .grid-venues li a h5 {
+.internVenue-body .grid-hotels li a h5,
+.internprovider-body .grid-hotels li a h5 {
   font-family: "MuseoSans-500";
   font-size: 1.8rem;
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a img,
-.internprovider-body .grid-venues li a img {
+.internVenue-body .grid-hotels li a img,
+.internprovider-body .grid-hotels li a img {
   width: 160px;
   border-radius: 15px;
 }
 
-.internVenue-body .grid-venues li a .data,
-.internprovider-body .grid-venues li a .data {
+.internVenue-body .grid-hotels li a .data,
+.internprovider-body .grid-hotels li a .data {
   display: flex;
   padding: 24px 20px 10px 15px;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.internVenue-body .grid-venues li a .flex,
-.internprovider-body .grid-venues li a .flex {
+.internVenue-body .grid-hotels li a .flex,
+.internprovider-body .grid-hotels li a .flex {
   display: flex;
   align-items: flex-start;
   @media only screen and (max-width: 768px) {
@@ -955,13 +912,13 @@
   }
 }
 
-.internVenue-body .grid-venues li a .flex .sala,
-.internprovider-body .grid-venues li a .flex .sala {
+.internVenue-body .grid-hotels li a .flex .sala,
+.internprovider-body .grid-hotels li a .flex .sala {
   margin-right: 60px;
 }
 
-.internVenue-body .grid-venues li a .flex .sala small,
-.internprovider-body .grid-venues li a .flex .sala small {
+.internVenue-body .grid-hotels li a .flex .sala small,
+.internprovider-body .grid-hotels li a .flex .sala small {
   font-family: "MuseoSans-900";
   font-size: 14px;
   margin-bottom: 10px;
@@ -969,15 +926,15 @@
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a .flex .sala p,
-.internprovider-body .grid-venues li a .flex .sala p {
+.internVenue-body .grid-hotels li a .flex .sala p,
+.internprovider-body .grid-hotels li a .flex .sala p {
   font-family: "MuseoSans-500";
   font-size: 1.8rem;
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a .flex .localidad small,
-.internprovider-body .grid-venues li a .flex .localidad small {
+.internVenue-body .grid-hotels li a .flex .localidad small,
+.internprovider-body .grid-hotels li a .flex .localidad small {
   font-family: "MuseoSans-900";
   font-size: 14px;
   margin-bottom: 10px;
@@ -985,26 +942,11 @@
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a .flex .localidad p,
-.internprovider-body .grid-venues li a .flex .localidad p {
+.internVenue-body .grid-hotels li a .flex .localidad p,
+.internprovider-body .grid-hotels li a .flex .localidad p {
   font-family: "MuseoSans-500";
   font-size: 1.8rem;
   color: #fff;
-}
-
-.internVenue-body footer::before,
-.internprovider-body footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
 }
 
 .internVenue-body .images h2,
@@ -1032,19 +974,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
-    &::after {
-      background-image: url(../img/ab-curve_black.svg);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: contain;
-      bottom: -1px;
-      content: "";
-      height: 254px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      pointer-events: none;
-    }
+
     h1 {
       font-family: "MuseoSans-700";
       font-size: 60px;
@@ -1350,31 +1280,7 @@
     @media screen and (max-width: 1023px) {
       border-radius: 0;
     }
-    &::after {
-      background-image: url(../img/ab-curve_black.svg);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: contain;
-      bottom: -1px;
-      content: "";
-      height: 254px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-    }
-    &::before {
-      background-image: url(../img/ba-curve_black.svg);
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: contain;
-      content: "";
-      height: 400px;
-      left: 0;
-      position: absolute;
-      top: -1px;
-      width: 100%;
-      z-index: 2;
-    }
+
     img {
       height: 100%;
       object-fit: cover;
@@ -1454,7 +1360,7 @@
       }
     }
   }
-  .grid-venues {
+  .grid-hotels {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
@@ -1463,93 +1369,137 @@
     margin: 30px auto;
     li {
       a {
-        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: inset rgba($color: #444, $alpha: 0.2) 0 0 20px;
+        box-sizing: border-box;
         border-radius: 15px;
+        color: #fff;
+        margin: calc(var(--marginelements) / 2);
         overflow: hidden;
-        display: flex;
         width: 100%;
-        background-color: #1a1a1a;
-        box-shadow: 4px 4px 6px rgb(0 0 0 / 50%);
+        background: #fff;
         height: 100%;
         &:hover {
-          transform: scale(1.03);
-          background: rgb(77, 77, 75);
-          background: linear-gradient(
-            223deg,
-            rgba(77, 77, 75, 1) 60%,
-            rgba(26, 26, 26, 1) 100%
-          );
-        }
-        h4 {
-          font-family: "MuseoSans-700";
-          font-size: 2.2rem;
-          color: #fff;
-        }
-        h5 {
-          font-family: "MuseoSans-500";
-          font-size: 1.8rem;
-          color: #fff;
-        }
-        img {
-          width: 160px;
-          border-radius: 15px;
-        }
-
-        .data {
-          display: flex;
-          padding: 24px 20px 10px 15px;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-        .flex {
-          display: flex;
-          align-items: flex-start;
-          .sala {
-            margin-right: 60px;
-            small {
-              font-family: "MuseoSans-900";
-              font-size: 14px;
-              margin-bottom: 10px;
-              display: block;
+          cursor: pointer;
+          transition: all 0.3s;
+          figure {
+            background-position: center top;
+            cursor: pointer;
+            height: 100%;
+            transition: all 0.3s ease-out;
+          }
+          .data {
+            * {
               color: #fff;
             }
-            p {
-              font-family: "MuseoSans-500";
-              font-size: 1.8rem;
+            .stars {
               color: #fff;
             }
           }
-          .localidad {
-            small {
-              font-family: "MuseoSans-900";
-              font-size: 14px;
-              margin-bottom: 10px;
-              display: block;
-              color: #fff;
+        }
+        figure {
+          transition: all 0.3s ease-out;
+          min-height: 150px;
+          height: 100%;
+        }
+        .flex {
+          align-items: normal;
+          height: 100%;
+        }
+        .data {
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .stars {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            color: #649ac0;
+            font-weight: bold;
+            img {
+              width: 25px;
             }
-            p {
-              font-family: "MuseoSans-500";
+          }
+
+          .colors {
+            margin: 15px 0 10px 0;
+            li {
+              display: inline-block;
+              margin: 0 3px;
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              span {
+                display: none;
+              }
+            }
+          }
+          h1 {
+            font-size: 2.2rem;
+            color: #649ac0;
+            font-weight: bold;
+          }
+          h2 {
+            font-size: 1.8rem;
+            color: #649ac0;
+            font-weight: bold;
+          }
+          h3 {
+            font-size: 1.3rem;
+            color: #649ac0;
+            font-weight: bold;
+            display: block;
+            padding: 3px 0;
+            strong {
               font-size: 1.8rem;
-              color: #fff;
             }
+          }
+        }
+        .address {
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: #649ac0;
+          font-weight: bold;
+          img {
+            height: 20px;
+            width: 20px;
+            object-fit: contain;
+          }
+        }
+        .phone {
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          color: #649ac0;
+          font-weight: bold;
+          gap: 10px;
+          img {
+            height: 20px;
+            width: 20px;
+            object-fit: contain;
+          }
+        }
+        .email {
+          font-size: 14px;
+          display: flex;
+          color: #649ac0;
+          font-weight: bold;
+          align-items: center;
+          gap: 10px;
+          img {
+            height: 20px;
+            width: 20px;
+            object-fit: contain;
           }
         }
       }
     }
   }
-  footer::before {
-    background-image: url(../img/ba-curve_black.svg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-    height: 400px;
-    left: 0;
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    z-index: 2;
-  }
+
   .images {
     h2 {
       margin: 90px 0 0px;
@@ -1557,7 +1507,6 @@
   }
 }
 
-@charset "UTF-8";
 .mice_body main {
   background: #1a1a1a;
   padding: 0;
@@ -2014,19 +1963,6 @@
     height: auto;
   }
 }
-.mice_body footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
-}
 
 .mice_body .searchMICE {
   padding: 0;
@@ -2057,18 +1993,6 @@
     padding: 0 0 100px;
     position: relative;
   }
-}
-.banner-mice::after {
-  background-image: url("../img/ab-curve_black.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: -1px;
-  content: "";
-  height: 254px;
-  left: 0;
-  position: absolute;
-  width: 100%;
 }
 
 .banner-mice h1 {
@@ -2365,7 +2289,7 @@
     margin-bottom: 20px;
   }
 }
-.venuesList-body .venuesList .right .grid-venues {
+.venuesList-body .venuesList .right .grid-hotels {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
@@ -2375,20 +2299,20 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .venuesList-body .venuesList .right .grid-venues {
+  .venuesList-body .venuesList .right .grid-hotels {
     gap: 20px;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
   }
 }
 @media only screen and (max-width: 768px) {
-  .venuesList-body .venuesList .right .grid-venues {
+  .venuesList-body .venuesList .right .grid-hotels {
     gap: 20px;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
   }
 }
-.venuesList-body .venuesList .right .grid-venues li a {
+.venuesList-body .venuesList .right .grid-hotels li a {
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   border-radius: 15px;
   overflow: hidden;
@@ -2400,13 +2324,13 @@
   height: 100%;
 }
 
-.venuesList-body .venuesList .right .grid-venues li a:hover {
+.venuesList-body .venuesList .right .grid-hotels li a:hover {
   transform: scale(1.03);
   background: #4d4d4b;
   background: linear-gradient(223deg, #4d4d4b 60%, #1a1a1a 100%);
 }
 
-.venuesList-body .venuesList .right .grid-venues li a h4 {
+.venuesList-body .venuesList .right .grid-hotels li a h4 {
   font-family: "MuseoSans-700";
   font-size: 1.8rem;
   color: #fff;
@@ -2414,34 +2338,34 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .venuesList-body .venuesList .right .grid-venues li a h4 {
+  .venuesList-body .venuesList .right .grid-hotels li a h4 {
     font-size: 1.8rem;
   }
 }
-.venuesList-body .venuesList .right .grid-venues li a h5 {
+.venuesList-body .venuesList .right .grid-hotels li a h5 {
   font-family: "MuseoSans-500";
   font-size: 1.3rem;
   color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
-  .venuesList-body .venuesList .right .grid-venues li a h5 {
+  .venuesList-body .venuesList .right .grid-hotels li a h5 {
     font-size: 1.4rem;
   }
 }
-.venuesList-body .venuesList .right .grid-venues li a img {
+.venuesList-body .venuesList .right .grid-hotels li a img {
   width: 160px;
   border-radius: 15px;
 }
 
 @media only screen and (max-width: 768px) {
-  .venuesList-body .venuesList .right .grid-venues li a img {
+  .venuesList-body .venuesList .right .grid-hotels li a img {
     width: 45%;
     border-radius: 15px;
     object-fit: cover;
   }
 }
-.venuesList-body .venuesList .right .grid-venues li a .data {
+.venuesList-body .venuesList .right .grid-hotels li a .data {
   display: flex;
   padding: 24px 20px 10px 15px;
   flex-direction: column;
@@ -2449,28 +2373,28 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .venuesList-body .venuesList .right .grid-venues li a .data {
+  .venuesList-body .venuesList .right .grid-hotels li a .data {
     gap: 50px;
   }
 }
-.venuesList-body .venuesList .right .grid-venues li a .flex {
+.venuesList-body .venuesList .right .grid-hotels li a .flex {
   display: flex;
   align-items: flex-start;
   gap: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  .venuesList-body .venuesList .right .grid-venues li a .flex {
+  .venuesList-body .venuesList .right .grid-hotels li a .flex {
     flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .venuesList-body .venuesList .right .grid-venues li a .flex .sala {
+  .venuesList-body .venuesList .right .grid-hotels li a .flex .sala {
     margin-bottom: 15px;
   }
 }
-.venuesList-body .venuesList .right .grid-venues li a .flex .sala small {
+.venuesList-body .venuesList .right .grid-hotels li a .flex .sala small {
   font-family: "MuseoSans-900";
   font-size: 12px;
   margin-bottom: 10px;
@@ -2478,13 +2402,13 @@
   color: #fff;
 }
 
-.venuesList-body .venuesList .right .grid-venues li a .flex .sala p {
+.venuesList-body .venuesList .right .grid-hotels li a .flex .sala p {
   font-family: "MuseoSans-500";
   font-size: 1.4rem;
   color: #fff;
 }
 
-.venuesList-body .venuesList .right .grid-venues li a .flex .localidad small {
+.venuesList-body .venuesList .right .grid-hotels li a .flex .localidad small {
   font-family: "MuseoSans-900";
   font-size: 12px;
   margin-bottom: 10px;
@@ -2492,13 +2416,13 @@
   color: #fff;
 }
 
-.venuesList-body .venuesList .right .grid-venues li a .flex .localidad p {
+.venuesList-body .venuesList .right .grid-hotels li a .flex .localidad p {
   font-family: "MuseoSans-500";
   font-size: 1.4rem;
   color: #fff;
 }
 
-.venuesList-body .venuesList .right .grid-venues .noResults {
+.venuesList-body .venuesList .right .grid-hotels .noResults {
   align-content: center;
   align-items: center;
   align-self: center;
@@ -2534,20 +2458,6 @@
   height: 100%;
   object-fit: contain;
   width: 100%;
-}
-
-.venuesList-body footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2587,21 +2497,6 @@
   @media only screen and (max-width: 768px) {
     min-height: 70vh;
   }
-}
-
-.internVenue-body .banner-internVenue::after,
-.internprovider-body .banner-internVenue::after {
-  background-image: url("../img/ab-curve_black.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: -1px;
-  content: "";
-  height: 254px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  pointer-events: none;
 }
 
 .internVenue-body .banner-internVenue h1,
@@ -3198,34 +3093,6 @@
     border-radius: 0;
   }
 }
-.internVenue-body .gallery.others::after,
-.internprovider-body .gallery.others::after {
-  background-image: url("../img/ab-curve_black.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: -1px;
-  content: "";
-  height: 254px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.internVenue-body .gallery.others::before,
-.internprovider-body .gallery.others::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
-}
 
 .internVenue-body .gallery.others img,
 .internprovider-body .gallery.others img {
@@ -3437,8 +3304,8 @@
     opacity: 0.5;
   }
 }
-.internVenue-body .grid-venues,
-.internprovider-body .grid-venues {
+.internVenue-body .grid-hotels,
+.internprovider-body .grid-hotels {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
@@ -3448,8 +3315,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .internVenue-body .grid-venues,
-  .internprovider-body .grid-venues {
+  .internVenue-body .grid-hotels,
+  .internprovider-body .grid-hotels {
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr;
@@ -3459,55 +3326,53 @@
     padding: 0 20px;
   }
 }
-.internVenue-body .grid-venues li a,
-.internprovider-body .grid-venues li a {
+.internVenue-body .grid-hotels li a,
+.internprovider-body .grid-hotels li a {
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   border-radius: 15px;
   overflow: hidden;
   display: flex;
   width: 100%;
-  background-color: #1a1a1a;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
   height: 100%;
 }
 
-.internVenue-body .grid-venues li a:hover,
-.internprovider-body .grid-venues li a:hover {
+.internVenue-body .grid-hotels li a:hover,
+.internprovider-body .grid-hotels li a:hover {
   transform: scale(1.03);
-  background: #4d4d4b;
-  background: linear-gradient(223deg, #4d4d4b 60%, #1a1a1a 100%);
+  background: #649ac0;
 }
 
-.internVenue-body .grid-venues li a h4,
-.internprovider-body .grid-venues li a h4 {
+.internVenue-body .grid-hotels li a h4,
+.internprovider-body .grid-hotels li a h4 {
   font-family: "MuseoSans-700";
   font-size: 2.2rem;
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a h5,
-.internprovider-body .grid-venues li a h5 {
+.internVenue-body .grid-hotels li a h5,
+.internprovider-body .grid-hotels li a h5 {
   font-family: "MuseoSans-500";
   font-size: 1.8rem;
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a img,
-.internprovider-body .grid-venues li a img {
+.internVenue-body .grid-hotels li a img,
+.internprovider-body .grid-hotels li a img {
   width: 160px;
   border-radius: 15px;
 }
 
-.internVenue-body .grid-venues li a .data,
-.internprovider-body .grid-venues li a .data {
+.internVenue-body .grid-hotels li a .data,
+.internprovider-body .grid-hotels li a .data {
   display: flex;
   padding: 24px 20px 10px 15px;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.internVenue-body .grid-venues li a .flex,
-.internprovider-body .grid-venues li a .flex {
+.internVenue-body .grid-hotels li a .flex,
+.internprovider-body .grid-hotels li a .flex {
   display: flex;
   align-items: flex-start;
   @media only screen and (max-width: 768px) {
@@ -3515,13 +3380,13 @@
   }
 }
 
-.internVenue-body .grid-venues li a .flex .sala,
-.internprovider-body .grid-venues li a .flex .sala {
+.internVenue-body .grid-hotels li a .flex .sala,
+.internprovider-body .grid-hotels li a .flex .sala {
   margin-right: 60px;
 }
 
-.internVenue-body .grid-venues li a .flex .sala small,
-.internprovider-body .grid-venues li a .flex .sala small {
+.internVenue-body .grid-hotels li a .flex .sala small,
+.internprovider-body .grid-hotels li a .flex .sala small {
   font-family: "MuseoSans-900";
   font-size: 14px;
   margin-bottom: 10px;
@@ -3529,15 +3394,15 @@
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a .flex .sala p,
-.internprovider-body .grid-venues li a .flex .sala p {
+.internVenue-body .grid-hotels li a .flex .sala p,
+.internprovider-body .grid-hotels li a .flex .sala p {
   font-family: "MuseoSans-500";
   font-size: 1.8rem;
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a .flex .localidad small,
-.internprovider-body .grid-venues li a .flex .localidad small {
+.internVenue-body .grid-hotels li a .flex .localidad small,
+.internprovider-body .grid-hotels li a .flex .localidad small {
   font-family: "MuseoSans-900";
   font-size: 14px;
   margin-bottom: 10px;
@@ -3545,26 +3410,11 @@
   color: #fff;
 }
 
-.internVenue-body .grid-venues li a .flex .localidad p,
-.internprovider-body .grid-venues li a .flex .localidad p {
+.internVenue-body .grid-hotels li a .flex .localidad p,
+.internprovider-body .grid-hotels li a .flex .localidad p {
   font-family: "MuseoSans-500";
   font-size: 1.8rem;
   color: #fff;
-}
-
-.internVenue-body footer::before,
-.internprovider-body footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
 }
 
 .internVenue-body .images h2,
@@ -3647,19 +3497,6 @@
     background: rgb(26, 26, 26);
     background: linear-gradient(0deg, #1a1a1a 20%, #212121 80%);
     position: relative;
-    &::before {
-      background-image: url(../img/ba-curve_black.svg);
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: contain;
-      top: -1px;
-      content: "";
-      height: 254px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      z-index: 2;
-    }
   }
 }
 
@@ -4033,20 +3870,6 @@
   transform: scale(1.2);
 }
 
-.thecity footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
-}
-
 @media only screen and (max-width: 768px) {
   .thecity footer {
     padding: 50px 0;
@@ -4200,18 +4023,6 @@
     height: 80vh;
   }
 }
-.internStorie-banner::after {
-  background-image: url("../img/ab-curve_black.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: -1px;
-  content: "";
-  height: 254px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
 
 .internStorie-banner h1 {
   color: #fff;
@@ -4272,32 +4083,6 @@
   .internStorie main .gallery {
     border-radius: 0;
   }
-}
-.internStorie main .gallery::after {
-  background-image: url("../img/ab-curve_black.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: -1px;
-  content: "";
-  height: 254px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.internStorie main .gallery::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
 }
 
 .internStorie main .gallery img {
@@ -4406,19 +4191,6 @@
     font-size: 8vw;
   }
 }
-.internStorie footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
-}
 
 @media only screen and (max-width: 768px) {
   .internStorie footer {
@@ -4426,19 +4198,6 @@
     margin: 0;
     height: auto;
   }
-}
-.bioseguridad footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
 }
 
 .bioseguridad main {
@@ -4608,20 +4367,6 @@
 }
 .movilidad footer {
   z-index: 5;
-}
-
-.movilidad footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
 }
 
 .movilidad main {
@@ -4998,20 +4743,6 @@
     -ms-overflow-style: none;
   }
 }
-.airport footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
-}
-
 @media only screen and (max-width: 768px) {
   .airport footer {
     padding: 50px 0;
@@ -6925,7 +6656,7 @@ div#c-6 span {
   padding: 80px 0 140px;
   width: 100%;
   p {
-    color: #fff;
+    color: #606060;
     font-size: 1.7rem;
     line-height: 3.2rem;
     text-align: center;
@@ -6933,7 +6664,7 @@ div#c-6 span {
 }
 .internprovider-body main h2.imagesTitle {
   font-size: 50px;
-  color: #fff;
+  color: #8597a5;
   margin: 0 0 -50px 0;
   font-family: "MuseoSans-700";
   text-align: center;
@@ -6957,4 +6688,17 @@ small.recomendacion {
 .flex.infoButtons {
   max-width: 580px;
   margin: 0 auto;
+}
+
+.info-container .stars {
+  font-family: "MuseoSans-900";
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+  color: #606060;
+  img {
+    width: 20px;
+  }
 }

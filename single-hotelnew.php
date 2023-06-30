@@ -2,7 +2,7 @@
 $bodyClass="internVenue-body intern-hotelnew font1";
 include 'includes/head.php';
 $hotelID = $_GET['hotelid'];
-$venue = $mice->getHotels("all",$hotelID);
+$venue = $mice->getHotels("all",$hotelID, "all","all","all");
 $venue = $venue[0];
 ?>
 <div class="banner-internVenue" style="
@@ -45,7 +45,10 @@ $venue = $venue[0];
     <div class="intro-txt" data-aos="zoom-in" data-aos-delay="300">
       <?=$venue->field_desc?>
     </div>
-
+    <?php 
+              $galItems = explode(",", $venue->field_galery);
+    if($galItems[0] != ''){
+    ?>
     <div class="gallery-container">
       <div class="gallery-slider">
         <section class="splide" aria-label="Basic Structure Example">
@@ -62,7 +65,6 @@ $venue = $venue[0];
           <div class="splide__track">
             <ul class="splide__list">
               <?php 
-              $galItems = explode(",", $venue->field_galery);
               for ($i=0; $i < count($galItems) ; $i++) { 
                 $galItem = $galItems[$i];
               ?>
@@ -75,6 +77,8 @@ $venue = $venue[0];
         </section>
       </div>
     </div>
+    <?php } ?>
+
     <div class="recomendacion">
       <small>El contenido de este sitio web es de carácter informativo, su propósito es integrar las
         diferentes ofertas, tanto de locaciones como de proveedores relacionados con turismo de eventos y reuniones

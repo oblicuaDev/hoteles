@@ -34,4 +34,5 @@ include "includes/head.php";?>
         </section>
     </div>
 </div>
+<? include '../templates/ofertasRel.php'?>
 <? include 'includes/imports.php'?>

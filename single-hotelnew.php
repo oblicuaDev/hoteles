@@ -33,7 +33,7 @@ $venue = $venue[0];
     <?php if ($venue->field_hweb != '') { ?>
 
     <div class="email">
-      <a href="https://<?= $venue->field_hweb ?>" target="_blank">
+      <a href="<?= $venue->field_hweb ?>" target="_blank">
         <span>
           Ir al sitio web del hotel
         </span>

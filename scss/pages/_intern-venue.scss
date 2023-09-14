@@ -1952,18 +1952,6 @@
   margin-right: 30px;
 }
 
-.mice_body footer {
-  padding: 250px ​0 30px;
-}
-
-@media only screen and (max-width: 768px) {
-  .mice_body footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
-
 .mice_body .searchMICE {
   padding: 0;
   position: relative;
@@ -2460,13 +2448,6 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-  .venuesList-body footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 .internVenue-body main,
 .internprovider-body main {
   background: #1a1a1a;
@@ -3870,13 +3851,6 @@
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 768px) {
-  .thecity footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 .casosexito main {
   min-height: 100vh;
   background: #0f0f0f;
@@ -3896,13 +3870,6 @@
   margin: 50px auto 160px;
 }
 
-@media only screen and (max-width: 768px) {
-  .casosexito footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 .grid-stories {
   display: flex;
   flex-wrap: wrap;
@@ -4192,14 +4159,6 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .internStorie footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
-
 .bioseguridad main {
   min-height: 100vh;
   background: #0f0f0f;
@@ -4358,17 +4317,6 @@
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 768px) {
-  .bioseguridad footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
-.movilidad footer {
-  z-index: 5;
-}
-
 .movilidad main {
   padding-top: 120px;
   min-height: 100vh;
@@ -4505,13 +4453,6 @@
     color: #fff;
     margin-bottom: 15px;
     text-align: center;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .movilidad footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
   }
 }
 .airport main {
@@ -4743,13 +4684,7 @@
     -ms-overflow-style: none;
   }
 }
-@media only screen and (max-width: 768px) {
-  .airport footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
+
 button.moreItems {
   background-color: transparent;
   display: block;

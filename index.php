@@ -5,19 +5,19 @@ include "includes/head.php";?>
     <div class="column flex w_100">
         <aside class="column w_25 filters graybg m_outter">
             <button class="fw500" id="resetfilters">Limpiar filtros</button>
-            <h1 class="fw900">Encuentra hoteles en Bogotá</h1>
+            <h3 class="fw900">Encuentra hoteles en Bogotá</h3>
             <div class="filtergroup checkboxes color" data-filterid="tipos_de_hotel">
                 <h4 class="fw700"><span class="arrow"></span>Tipo de hotel</h4>
                 <div class="loader"></div>
                 <div class="content"></div>
             </div>
             <div class="filtergroup checkboxes color" data-filterid="servicios_de_hoteles">
-                <h2 class="fw700"><span class="arrow"></span>Servicios del hotel</h2>
+                <h4 class="fw700"><span class="arrow"></span>Servicios del hotel</h4>
                 <div class="loader"></div>
                 <div class="content"></div>
             </div>
             <div class="filtergroup checkboxes color" data-filterid="rangos_de_precios_hoteles">
-                <h3 class="fw700"><span class="arrow"></span>Rango de precios</h3>
+                <h4 class="fw700"><span class="arrow"></span>Rango de precios</h4>
                 <div class="loader"></div>
                 <div class="content"></div>
             </div>

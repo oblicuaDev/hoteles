@@ -6,28 +6,12 @@
       "es": {
         "title": "Buscar hoteles",
         "link": "http://bogotadc.travel/es/hoteles"
-      },
-      "en": {
-        "title": "Buscar hoteles",
-        "link": "http://bogotadc.travel/es/hoteles"
-      },
-      "pt": {
-        "title": "Buscar hoteles",
-        "link": "http://bogotadc.travel/es/hoteles"
       }
     },
     {
       "es": {
         "title": "Volver a bogotadc.travel",
         "link": "/es"
-      },
-      "en": {
-        "title": "Volver a bogotadc.travel",
-        "link": "/en"
-      },
-      "pt": {
-        "title": "Volver a bogotadc.travel",
-        "link": "/pt"
       }
     }
   ]
